@@ -39,8 +39,6 @@ def removeGarbage(content):
     return np.nan                                                   #On retourne NaN lorsque ca ne respecte aucune des conditions
 
 
-
-'''
 #Lien 1 - List_of_countries_by_GDP_(nominal)_per_capita
 url = "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita"
 tables = pd.read_html(url)
@@ -586,7 +584,7 @@ mod38 = col38.mode()
 min38 = col38.min()
 var38 = col38.var()
 bin38 = (col38.copy()).apply(lambda x: 1 if x > med38 else 0)
-'''
+
 
 #Lien 39 - List_of_countries_by_food_energy_intake
 url39 = "https://en.wikipedia.org/wiki/List_of_countries_by_food_energy_intake"
