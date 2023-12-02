@@ -40,7 +40,7 @@ def removeGarbage(content):
 
 
 
-
+'''
 #Lien 1 - List_of_countries_by_GDP_(nominal)_per_capita
 url = "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita"
 tables = pd.read_html(url)
@@ -234,8 +234,8 @@ bin13 = (col13.copy()).apply(lambda x: 1 if x > med13 else 0)
 #Lien 14 - List_of_countries_by_infant_and_under-five_mortality_rates
 url14 = "https://en.wikipedia.org/wiki/List_of_countries_by_infant_and_under-five_mortality_rates"
 tables14 = pd.read_html(url14)
-df14 = tables14[5]                                          #Table voulu
-col14 = df14[('2020')]                                      #Colonne voulue
+df14 = tables14[0]                                                          #Table voulu
+col14 = df14[('2020 mortality rate, under-5 (per 1000 live births)')]       #Colonne voulue
 col14 = pd.to_numeric(col14, errors = 'coerce')             
 avg14 = col14.mean()
 med14 = col14.median()
@@ -586,12 +586,13 @@ mod38 = col38.mode()
 min38 = col38.min()
 var38 = col38.var()
 bin38 = (col38.copy()).apply(lambda x: 1 if x > med38 else 0)
+'''
 
 #Lien 39 - List_of_countries_by_food_energy_intake
 url39 = "https://en.wikipedia.org/wiki/List_of_countries_by_food_energy_intake"
 tables39 = pd.read_html(url39)
 df39 = tables39[0]                                                                          #Table voulu
-col39 = df39[('Average daily dietary energy consumption per capita[6]', 'kilocalories')]    #Colonne voulue
+col39 = df39[('Average daily dietary energy consumption per capita[8]', 'kilocalories')]    #Colonne voulue
 col39 = pd.to_numeric(col39, errors = 'coerce')
 avg39 = col39.mean()
 med39 = col39.median()
