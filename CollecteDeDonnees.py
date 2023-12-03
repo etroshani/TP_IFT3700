@@ -52,6 +52,7 @@ mod = col.mode()
 min = col.min()
 var = col.var()
 bin = (col.copy()).apply(lambda x: 1 if x > med else 0)   #Crée une copie binaire de la colonne
+csv = bin.to_csv("lien1")
 
 #*****Faute dans le doc, pas de Average download speed (Mbit/s) (Ookla)
 #Lien 2 - List_of_countries_by_Internet_connection_speeds
@@ -66,7 +67,7 @@ mod2 = col2.mode()
 min2 = col2.min()
 var2 = col2.var()
 bin2 = (col2.copy()).apply(lambda x: 1 if x > med2 else 0)
-
+csv2 = bin2.to_csv("lien2")
 
 #Lien 3 - List_of_countries_by_alcohol_consumption_per_capita
 url3 = "https://en.wikipedia.org/wiki/List_of_countries_by_alcohol_consumption_per_capita"
@@ -81,6 +82,7 @@ mod3 = col3.mode()
 min3 = col3.min()
 var3 = col3.var()
 bin3 = (col3.copy()).apply(lambda x: 1 if x > med3 else 0)
+csv3 = bin3.to_csv("lien3")
 
 #Lien 4 - List_of_countries_by_intentional_homicide_rate
 url4 = "https://en.wikipedia.org/wiki/List_of_countries_by_intentional_homicide_rate"
@@ -95,6 +97,7 @@ mod4 = col4.mode()
 min4 = col4.min()
 var4 = col4.var()
 bin4 = (col4.copy()).apply(lambda x: 1 if x > med4 else 0)
+csv4 = bin4.to_csv("lien4")
 
 #Lien 5 - List_of_countries_with_highest_military_expenditures
 url5 = "https://en.wikipedia.org/wiki/List_of_countries_with_highest_military_expenditures"
@@ -109,6 +112,7 @@ mod5 = col5.mode()
 min5 = col5.min()
 var5 = col5.var()
 bin5 = (col5.copy()).apply(lambda x: 1 if x > med5 else 0)
+csv5 = bin5.to_csv("lien5")
 
 #Lien 6 - List_of_countries_by_Human_Development_Index
 url6 = "https://en.wikipedia.org/wiki/List_of_countries_by_Human_Development_Index"
@@ -123,6 +127,7 @@ mod6 = col6.mode()
 min6 = col6.min()
 var6 = col6.var()
 bin6 = (col6.copy()).apply(lambda x: 1 if x > med6 else 0)
+csv6 = bin6.to_csv("lien6")
 
 #Lien 7 - Democracy_Index
 url7 = "https://en.wikipedia.org/wiki/Democracy_Index"
@@ -137,6 +142,7 @@ mod7 = col7.mode()
 min7 = col7.min()
 var7 = col7.var()
 bin7 = (col7.copy()).apply(lambda x: 1 if x > med7 else 0)
+csv7 = bin7.to_csv("lien7")
 
 #Lien 8 - List_of_countries_by_tertiary_education_attainment
 url8 = "https://en.wikipedia.org/wiki/List_of_countries_by_tertiary_education_attainment"
@@ -152,6 +158,7 @@ mod8 = col8.mode()
 min8 = col8.min()
 var8 = col8.var()
 bin8 = (col8.copy()).apply(lambda x: 1 if x > med8 else 0)
+csv8 = bin8.to_csv("lien8")
 
 #Lien 9 - Importance_of_religion_by_country
 url9 = "https://en.wikipedia.org/wiki/Importance_of_religion_by_country"
@@ -166,6 +173,7 @@ mod9 = col9.mode()
 min9 = col9.min()
 var9 = col9.var()
 bin9 = (col9.copy()).apply(lambda x: 1 if x > med9 else 0)
+csv9 = bin9.to_csv("lien9")
 
 #Lien 10 - Christianity_by_country
 url10 = "https://en.wikipedia.org/wiki/Christianity_by_country"
@@ -181,6 +189,7 @@ mod10 = col10.mode()
 min10 = col10.min()
 var10 = col10.var()
 bin10 = (col10.copy()).apply(lambda x: 1 if x > med10 else 0)
+csv10 = bin10.to_csv("lien10")
 
 #Lien 11 - Islam_by_country
 url11 = "https://en.wikipedia.org/wiki/Islam_by_country"
@@ -196,6 +205,7 @@ mod11 = col11.mode()
 min11 = col11.min()
 var11 = col11.var()
 bin11 = (col11.copy()).apply(lambda x: 1 if x > med11 else 0)
+csv11 = bin11.to_csv("lien11")
 
 #Lien 12 - Buddhism_by_country
 url12 = "https://en.wikipedia.org/wiki/Buddhism_by_country"
@@ -212,6 +222,7 @@ mod12 = col12.mode()
 min12 = col12.min()
 var12 = col12.var()
 bin12 = (col12.copy()).apply(lambda x: 1 if x > med12 else 0)
+csv12 = bin12.to_csv("lien12")
 
 #Lien 13 - Jewish_population_by_country
 url13 = "https://en.wikipedia.org/wiki/Jewish_population_by_country"
@@ -227,6 +238,7 @@ mod13 = col13.mode()
 min13 = col13.min()
 var13 = col13.var()
 bin13 = (col13.copy()).apply(lambda x: 1 if x > med13 else 0)
+csv13 = bin13.to_csv("lien13")
 
 #***Faute dans le doc, pas de Under-five mortality (deaths/1,000 live births) – 2019 estimates
 #Lien 14 - List_of_countries_by_infant_and_under-five_mortality_rates
@@ -242,6 +254,7 @@ mod14 = col14.mode()
 min14 = col14.min()
 var14 = col14.var()
 bin14 = (col14.copy()).apply(lambda x: 1 if x > med14 else 0)
+csv14 = bin14.to_csv("lien14")
 
 #Lien 15 - Age_of_criminal_responsibility
 url15 = "https://en.wikipedia.org/wiki/Age_of_criminal_responsibility"
@@ -257,6 +270,7 @@ mod15 = col15.mode()
 min15 = col15.min()
 var15 = col15.var()
 bin15 = (col15.copy()).apply(lambda x: 1 if x > med15 else 0)
+csv15 = bin15.to_csv("lien15")
 
 #Lien 16 - List_of_countries_by_minimum_wage
 url16 = "https://en.wikipedia.org/wiki/List_of_countries_by_minimum_wage"
@@ -271,6 +285,7 @@ mod16 = col16.mode()
 min16 = col16.min()
 var16 = col16.var()
 bin16 = (col16.copy()).apply(lambda x: 1 if x > med16 else 0)
+csv16 = bin16.to_csv("lien16")
 
 #Lien 17 - List_of_countries_by_external_debt
 url17 = "https://en.wikipedia.org/wiki/List_of_countries_by_external_debt"
@@ -284,6 +299,7 @@ mod17 = col17.mode()
 min17 = col17.min()
 var17 = col17.var()
 bin17 = (col17.copy()).apply(lambda x: 1 if x > med17 else 0)
+csv17 = bin17.to_csv("lien17")
 
 #Lien 18 - List_of_countries_by_income_equality
 url18 = "https://en.wikipedia.org/wiki/List_of_countries_by_income_equality"
@@ -297,6 +313,7 @@ mod18 = col18.mode()
 min18 = col18.min()
 var18 = col18.var()
 bin18 = (col18.copy()).apply(lambda x: 1 if x > med18 else 0)
+csv18 = bin18.to_csv("lien18")
 
 #Lien 19 - List_of_countries_by_total_health_expenditure_per_capita
 url19 = "https://en.wikipedia.org/wiki/List_of_countries_by_total_health_expenditure_per_capita"
@@ -310,6 +327,7 @@ mod19 = col19.mode()
 min19 = col19.min()
 var19 = col19.var()
 bin19 = (col19.copy()).apply(lambda x: 1 if x > med19 else 0)
+csv19 = bin19.to_csv("lien19")
 
 #Lien 20 - List_of_countries_by_suicide_rate
 url20 = "https://en.wikipedia.org/wiki/List_of_countries_by_suicide_rate"
@@ -323,6 +341,7 @@ mod20 = col20.mode()
 min20 = col20.min()
 var20 = col20.var()
 bin20 = (col20.copy()).apply(lambda x: 1 if x > med20 else 0)
+csv20 = bin20.to_csv("lien20")
 
 #***Pas de Table 2019 List by the World Bank, 2019.
 #Lien 21 - List_of_sovereign_states_and_dependencies_by_total_fertility_rate
@@ -338,6 +357,7 @@ mod21 = col21.mode()
 min21 = col21.min()
 var21 = col21.var()
 bin21 = (col21.copy()).apply(lambda x: 1 if x > med21 else 0)
+csv21 = bin21.to_csv("lien21")
 
 #***Pas de table Prevalence of current tobacco use among persons aged 15 years and older, 2000.
 #Lien 22 - Tobacco_consumption_by_country
@@ -353,6 +373,7 @@ mod22 = col22.mode()
 min22 = col22.min()
 var22 = col22.var()
 bin22 = (col22.copy()).apply(lambda x: 1 if x > med22 else 0)
+csv22 = bin22.to_csv("lien22")
 
 #Lien 23 - List_of_countries_by_obesity_rate
 url23 = "https://en.wikipedia.org/wiki/List_of_countries_by_obesity_rate"
@@ -366,6 +387,7 @@ mod23 = col23.mode()
 min23 = col23.min()
 var23 = col23.var()
 bin23 = (col23.copy()).apply(lambda x: 1 if x > med23 else 0)
+csv23 = bin23.to_csv("lien23")
 
 #Lien 24 - List_of_countries_by_number_of_Internet_users
 url24 = "https://en.wikipedia.org/wiki/List_of_countries_by_number_of_Internet_users"
@@ -381,6 +403,7 @@ mod24 = col24.mode()
 min24 = col24.min()
 var24 = col24.var()
 bin24 = (col24.copy()).apply(lambda x: 1 if x > med24 else 0)
+csv24 = bin24.to_csv("lien24")
 
 #Lien 25 - List_of_sovereign_states_and_dependencies_by_total_fertility_rate
 url25 = "https://en.wikipedia.org/wiki/List_of_countries_by_median_age"
@@ -395,6 +418,7 @@ mod25 = col25.mode()
 min25 = col25.min()
 var25 = col25.var()
 bin25 = (col25.copy()).apply(lambda x: 1 if x > med25 else 0)
+csv25 = bin25.to_csv("lien25")
 
 #Lien 26 - List_of_countries_by_economic_freedom
 url26 = "https://en.wikipedia.org/wiki/List_of_countries_by_economic_freedom"
@@ -409,6 +433,7 @@ mod26 = col26.mode()
 min26 = col26.min()
 var26 = col26.var()
 bin26 = (col26.copy()).apply(lambda x: 1 if x > med26 else 0)
+csv26 = bin26.to_csv("lien26")
 
 #***Pas de table per capita 2017
 #Lien 27 - List_of_countries_by_oil_production
@@ -424,6 +449,7 @@ mod27 = col27.mode()
 min27 = col27.min()
 var27 = col27.var()
 bin27 = (col27.copy()).apply(lambda x: 1 if x > med27 else 0)
+csv27 = bin27.to_csv("lien27")
 
 #Lien 28 - List_of_countries_by_population_growth_rate
 url28 = "https://en.wikipedia.org/wiki/List_of_countries_by_population_growth_rate"
@@ -438,6 +464,7 @@ mod28 = col28.mode()
 min28 = col28.min()
 var28 = col28.var()
 bin28 = (col28.copy()).apply(lambda x: 1 if x > med28 else 0)
+csv28 = bin28.to_csv("lien28")
 
 #Lien 29 - List_of_countries_by_life_expectancy
 url29 = "https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy"
@@ -452,6 +479,7 @@ mod29 = col29.mode()
 min29 = col29.min()
 var29 = col29.var()
 bin29 = (col29.copy()).apply(lambda x: 1 if x > med29 else 0)
+csv29 = bin29.to_csv("lien29")
 
 #Lien 30 - List_of_countries_by_meat_consumption
 url30 = "https://en.wikipedia.org/wiki/List_of_countries_by_meat_consumption"
@@ -466,6 +494,7 @@ mod30 = col30.mode()
 min30 = col30.min()
 var30 = col30.var()
 bin30 = (col30.copy()).apply(lambda x: 1 if x > med30 else 0)
+csv30 = bin30.to_csv("lien30")
 
 #Lien 31 - List_of_countries_by_incarceration_rate
 url31 = "https://en.wikipedia.org/wiki/List_of_countries_by_incarceration_rate"
@@ -480,6 +509,7 @@ mod31 = col31.mode()
 min31 = col31.min()
 var31 = col31.var()
 bin31 = (col31.copy()).apply(lambda x: 1 if x > med31 else 0)
+csv31 = bin31.to_csv("lien31")
 
 #Lien 32 - List_of_countries_by_literacy_rate
 url32 = "https://en.wikipedia.org/wiki/List_of_countries_by_literacy_rate"
@@ -494,6 +524,7 @@ mod32 = col32.mode()
 min32 = col32.min()
 var32 = col32.var()
 bin32 = (col32.copy()).apply(lambda x: 1 if x > med32 else 0)
+csv32 = bin32.to_csv("lien32")
 
 #Lien 33 - List_of_countries_by_age_at_first_marriage
 url33 = "https://en.wikipedia.org/wiki/List_of_countries_by_age_at_first_marriage"
@@ -513,6 +544,7 @@ mod33 = col33.mode()
 min33 = col33.min()
 var33 = col33.var()
 bin33 = (col33.copy()).apply(lambda x: 1 if x > med33 else 0)
+csv33 = bin33.to_csv("lien33")
 
 #Lien 34 - List_of_countries_by_spending_on_education_(%25_of_GDP)
 url34 = "https://en.wikipedia.org/wiki/List_of_countries_by_spending_on_education_(%25_of_GDP)"
@@ -527,6 +559,7 @@ mod34 = col34.mode()
 min34 = col34.min()
 var34 = col34.var()
 bin34 = (col34.copy()).apply(lambda x: 1 if x > med34 else 0)
+csv34 = bin34.to_csv("lien34")
 
 #***Homeless per 10 000********
 #Lien 35 - List_of_countries_by_homeless_population
@@ -542,6 +575,7 @@ mod35 = col35.mode()
 min35 = col35.min()
 var35 = col35.var()
 bin35 = (col35.copy()).apply(lambda x: 1 if x > med35 else 0)
+csv35 = bin35.to_csv("lien35")
 
 #Lien 36 - List_of_countries_by_milk_consumption_per_capita
 url36 = "https://en.wikipedia.org/wiki/List_of_countries_by_milk_consumption_per_capita"
@@ -556,6 +590,7 @@ mod36 = col36.mode()
 min36 = col36.min()
 var36 = col36.var()
 bin36 = (col36.copy()).apply(lambda x: 1 if x > med36 else 0)
+csv36 = bin36.to_csv("lien36")
 
 #Lien 37 - List_of_countries_by_number_of_scientific_and_technical_journal_articles
 url37 = "https://en.wikipedia.org/wiki/List_of_countries_by_number_of_scientific_and_technical_journal_articles"
@@ -570,6 +605,7 @@ mod37 = col37.mode()
 min37 = col37.min()
 var37 = col37.var()
 bin37 = (col37.copy()).apply(lambda x: 1 if x > med37 else 0)
+csv37 = bin37.to_csv("lien37")
 
 #Lien 38 - Books_published_per_country_per_year
 url38 = "https://en.wikipedia.org/wiki/Books_published_per_country_per_year"
@@ -584,7 +620,7 @@ mod38 = col38.mode()
 min38 = col38.min()
 var38 = col38.var()
 bin38 = (col38.copy()).apply(lambda x: 1 if x > med38 else 0)
-
+csv38 = bin38.to_csv("lien38")
 
 #Lien 39 - List_of_countries_by_food_energy_intake
 url39 = "https://en.wikipedia.org/wiki/List_of_countries_by_food_energy_intake"
@@ -599,6 +635,7 @@ mod39 = col39.mode()
 min39 = col39.min()
 var39 = col39.var()
 bin39 = (col39.copy()).apply(lambda x: 1 if x > med39 else 0)
+csv39 = bin39.to_csv("lien39")
 
 #Lien 40 - List_of_countries_by_average_yearly_temperature
 url40 = "https://en.wikipedia.org/wiki/List_of_countries_by_average_yearly_temperature"
@@ -613,4 +650,4 @@ mod40 = col40.mode()
 min40 = col40.min()
 var40 = col40.var()
 bin40 = (col40.copy()).apply(lambda x: 1 if x > med40 else 0)
-
+csv40 = bin40.to_csv("lien40")
