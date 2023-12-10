@@ -612,8 +612,6 @@ dfFinal = pd.merge(dfFinal, df40, left_index=True, right_index=True, how='outer'
 
 
 ##   Nettoyage final de la table    ##
-dfFinal = dfFinal.dropna(how='all')                     #Enlève tous les rows qui ne contiennent aucune valeur
-
 dfFinal = dfFinal.drop('Population replacement', axis=0)
 dfFinal = dfFinal.drop('World total', axis=0)
 dfFinal = dfFinal.drop('World', axis=0)
@@ -772,5 +770,7 @@ combinedData = dfFinal.loc[["China", "People's Republic of China", "Republic of 
 dfFinal.loc["China"] = combinedData
 dfFinal.drop(index=["People's Republic of China", "Republic of China"], inplace=True)
 
+# Nettoyage des rows vide
+dfFinal = dfFinal.dropna(how='all')                     #Enlève tous les rows qui ne contiennent aucune valeur
 
 csvFinal = dfFinal.to_csv("Collecte_Donnees_Nettoyees_test2.csv")
