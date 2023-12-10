@@ -100,7 +100,7 @@ url4 = "https://en.wikipedia.org/wiki/List_of_countries_by_intentional_homicide_
 tables4 = pd.read_html(url4)
 df4 = tables4[1][['Location', 'Rate']]                                      #Colonne voulue
 df4.columns = ['Country/Territory', 'Rate of intentional homicide']
-df4['Country/Territory'] = df4['Country/Territory'].str.replace(r'\*', '', regex=True).str.strip()          #On n'applique pas la fonction indexClean car on veut la région de kurdistan en Iraq, et les régions dans le UK
+df4['Country/Territory'] = df4['Country/Territory'].str.replace(r'\*', '', regex=True).str.strip()          #On n'applique pas la fonction indexClean car on veut séparer la région de kurdistan en Iraq, et les régions dans le UK
 df4 = df4.set_index('Country/Territory')
 df4["Rate of intentional homicide"] = pd.to_numeric(df4["Rate of intentional homicide"], errors = 'coerce')     
 colValeurs4 = valeurs(df4["Rate of intentional homicide"])
@@ -632,6 +632,18 @@ dfFinal = dfFinal.drop('Oceania', axis=0)
 dfFinal = dfFinal.drop('South-East Asia', axis=0)
 dfFinal = dfFinal.drop('Western Pacific', axis=0)
 dfFinal = dfFinal.drop('Eastern Mediterranean', axis=0)
+dfFinal = dfFinal.drop('British Indian Ocean Territory', axis=0)
+dfFinal = dfFinal.drop('Cocos  Islands', axis=0)
+dfFinal = dfFinal.drop('Holy See', axis=0)
+dfFinal = dfFinal.drop('Iraq (Kurdistan Region)', axis=0)
+dfFinal = dfFinal.drop('Iraq. Central Iraq', axis=0)
+dfFinal = dfFinal.drop('Mainland China', axis=0)
+dfFinal = dfFinal.drop('Pitcairn Islands', axis=0)
+dfFinal = dfFinal.drop('Republika Srpska', axis=0)
+dfFinal = dfFinal.drop('Saint Barthelemy', axis=0)
+dfFinal = dfFinal.drop('Somaliland', axis=0)
+dfFinal = dfFinal.drop('Svalbard and Jan Mayen', axis=0)
+dfFinal = dfFinal.drop('United Kingdom  (Great Britain and Northern Ireland)', axis=0)
 
 
 # Nettoyage de Democratic Republic of Congo
@@ -761,4 +773,4 @@ dfFinal.loc["China"] = combinedData
 dfFinal.drop(index=["People's Republic of China", "Republic of China"], inplace=True)
 
 
-csvFinal = dfFinal.to_csv("Collecte_Donnees_Nettoyees_Final.csv")
+csvFinal = dfFinal.to_csv("Collecte_Donnees_Nettoyees_test2.csv")
