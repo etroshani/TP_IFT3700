@@ -642,7 +642,7 @@ dfFinal = dfFinal.drop('Saint Barthelemy', axis=0)
 dfFinal = dfFinal.drop('Somaliland', axis=0)
 dfFinal = dfFinal.drop('Svalbard and Jan Mayen', axis=0)
 dfFinal = dfFinal.drop('United Kingdom  (Great Britain and Northern Ireland)', axis=0)
-
+dfFinal = dfFinal.drop('Zanzibar', axis=0)
 
 # Nettoyage de Democratic Republic of Congo
 combinedData = dfFinal.loc[["Democratic Republic of Congo","Congo", "Congo DR", "Congo, Democratic Republic of", "Congo, Republic of", "DR Congo", "Democratic Republic of the Congo", "Republic of Congo", "Republic of the Congo"]].ffill().iloc[-1]
